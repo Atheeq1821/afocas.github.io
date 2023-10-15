@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afocas </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body >
+
+    <div class="title">
+        <div class="welcome">
+        Welcome to 
+        </div>
+        <div class="afc">AFOCAS</div>
+    </div>
+    <div class="wrapper">
+        
+        <div class="form-wrapper sign-up">
+            <form id="freelance-form">
+                <h2>Freelancer</h2>
+                <div class="input-group">
+                    <input type="text" required id="freelancename">
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required id="freelancemail">
+                    <label for="">Email</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="sign-link">
+                    <p>Hire Us? <a href="#" class="signIn-link">Client Portal</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form id="client-form">
+                <h2>Client Login</h2>
+                <div class="input-group">
+                    <input type="text" required id="clientname" >
+                    <label for="clientname">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required id="clientmail">
+                    <label for="clientmail">Email</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="sign-link">
+                    <p>Want to work with us? <a href="#" class="signUp-link">Freelancer Portal</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+<div class="loader"></div>
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init('TDFj97nc640u9MnMM');
+    })();
+</script>
+</html>
