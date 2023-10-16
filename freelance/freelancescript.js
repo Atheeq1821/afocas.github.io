@@ -54,6 +54,10 @@ let pro_des = [
     "Algorithm revolutionizes the way you access repair services. Our platform connects you with certified technicians for a hassle-free experience"
     
 ]
+let pro_links = [
+    "https://www.niyafit.com/",
+    "https://www.algorithmservice.in/"
+]
 let item_size=img_list.length
 let content =""
 for(let i=0;i<item_size;i++){
@@ -64,7 +68,7 @@ for(let i=0;i<item_size;i++){
       </div>
       <div class="pro-content">
         <div class="pro-title">
-            ${pro_titles[i]}
+           <a href="${pro_links[i]}" target="_blank">${pro_titles[i]}</a>
         </div>
         <div class="pro-des">
           ${pro_des[i]}
