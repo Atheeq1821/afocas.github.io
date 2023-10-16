@@ -180,8 +180,9 @@ a{
 
 #onpro-par{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 .skill-title{
     font-size: 50px;
@@ -208,6 +209,8 @@ a{
 }
 #pro-par{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .pro-title{
@@ -216,6 +219,13 @@ a{
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid white;
+  text-align: left;
+}
+.pro-title a{
+  transition: all .5s;
+}
+.pro-title a:hover{
+  color: #FFC700;
 }
 .pro-image{
   border-top-left-radius: 20px;
@@ -223,22 +233,27 @@ a{
 .pro-image img{
   overflow-x: scroll;
   object-position: center;
+  width: 100%;
 }
 .pro-child{
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 45%;
+  margin-bottom: 50px;
 }
 .pro-content{
   background-color: #3d3b3b;
   padding: 10px;
-  width: 95%;
+  width: 100%;
   border-bottom-right-radius: 20px;
 }
 .pro-des{
   font-size: 20px;
   letter-spacing: 1px;
+  text-align: left;
 }
-
-
 footer{
   border-top: 2px solid #FFC700;
   margin-top: 40px;
